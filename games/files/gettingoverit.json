@@ -1,0 +1,43 @@
+[{
+    "game": "gettingoverit",
+    "player": {
+        "guildID": "616659962931707915",
+        "userID": "187542518659809280",
+        "joinedTimestamp": 1567094311310,
+        "lastMessageChannelID": "616665412502945896",
+        "premiumSinceTimestamp": null,
+        "deleted": false,
+        "nickname": "Lasse Skaalum",
+        "displayName": "Lasse Skaalum"
+    },
+    "time": 1469438,
+    "date": "2020-08-06T21:29:17.644Z"
+}, {
+    "game": "gettingoverit",
+    "player": {
+        "guildID": "616659962931707915",
+        "userID": "345130599478198275",
+        "joinedTimestamp": 1588189259602,
+        "lastMessageChannelID": "616665412502945896",
+        "premiumSinceTimestamp": null,
+        "deleted": false,
+        "nickname": null,
+        "displayName": "samuel"
+    },
+    "time": 266698,
+    "date": "2020-08-06T21:37:52.303Z"
+}, {
+    "game": "gettingoverit",
+    "player": {
+        "guildID": "616659962931707915",
+        "userID": "345130599478198275",
+        "joinedTimestamp": 1588189259602,
+        "lastMessageChannelID": "616665412502945896",
+        "premiumSinceTimestamp": null,
+        "deleted": false,
+        "nickname": null,
+        "displayName": "samuel"
+    },
+    "time": 219984,
+    "date": "2020-08-06T22:18:05.881Z"
+}]
