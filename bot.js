@@ -27,6 +27,7 @@ global.bot.on(`ready`, () => {
 
 // Main method. When a message occurs in a chat this happens
 global.bot.on(`message`, (msg) => {
+  console.log(msg.content);
   if (msg.content[0] === p) {
     const argv = msg.content.split(` `).map((arg) => arg.toLowerCase());
     const models = constructModels(msg, argv);
@@ -68,6 +69,7 @@ function handle(type, msg, argv, models) {
     switch (type) {
       case `add`: models[argv[1]].add(msg, argv); break;
       case `get`: models[argv[1]].get(msg, argv); break;
+      case `alex`: msg.reply(`Hej Alex!`);        break;
       default:
         console.log(`Something went wrong in the handle() function. ${type} is not recognized.`);
         msg.reply(`Fatal bot error.`);
