@@ -27,19 +27,17 @@ global.bot.on(`ready`, () => {
 
 // Main method. When a message occurs in a chat this happens
 global.bot.on(`message`, (msg) => {
-  console.log(msg.content);
   if (msg.content[0] === p) {
     const argv = msg.content.split(` `).map((arg) => arg.toLowerCase());
     const models = constructModels(msg, argv);
 
     switch (argv[0]) {
       case `${p}help`: case `${p}h`: case `${p}commands`:
-        sendHelpMsg(msg);                        break;
-      case `${p}add`: handle(`add`, msg, argv, models);    break;
-      case `${p}get`: handle(`get`, msg, argv, models);    break;
-      case `${p}alex`: msg.reply(`Hej Alex!`);        break;
-      case `${p}adm`: adm(msg, argv, models);    break;
-      default: sendInvalidReply(msg, `command`); break;
+        sendHelpMsg(msg);                               break;
+      case `${p}add`: handle(`add`, msg, argv, models); break;
+      case `${p}get`: handle(`get`, msg, argv, models); break;
+      case `${p}adm`: adm(msg, argv, models);           break;
+      default: sendInvalidReply(msg, `command`);        break;
     }
   }
 });
