@@ -37,6 +37,7 @@ global.bot.on(`message`, (msg) => {
         sendHelpMsg(msg);                        break;
       case `${p}add`: handle(`add`, msg, argv, models);    break;
       case `${p}get`: handle(`get`, msg, argv, models);    break;
+      case `alex`: msg.reply(`Hej Alex!`);        break;
       case `${p}adm`: adm(msg, argv, models);    break;
       default: sendInvalidReply(msg, `command`); break;
     }
@@ -69,7 +70,6 @@ function handle(type, msg, argv, models) {
     switch (type) {
       case `add`: models[argv[1]].add(msg, argv); break;
       case `get`: models[argv[1]].get(msg, argv); break;
-      case `alex`: msg.reply(`Hej Alex!`);        break;
       default:
         console.log(`Something went wrong in the handle() function. ${type} is not recognized.`);
         msg.reply(`Fatal bot error.`);
