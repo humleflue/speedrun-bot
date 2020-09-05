@@ -37,7 +37,7 @@ global.bot.on(`message`, (msg) => {
         sendHelpMsg(msg);                        break;
       case `${p}add`: handle(`add`, msg, argv, models);    break;
       case `${p}get`: handle(`get`, msg, argv, models);    break;
-      case `alex`: msg.reply(`Hej Alex!`);        break;
+      case `${p}alex`: msg.reply(`Hej Alex!`);        break;
       case `${p}adm`: adm(msg, argv, models);    break;
       default: sendInvalidReply(msg, `command`); break;
     }
