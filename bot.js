@@ -11,7 +11,7 @@ const fs      = require(`fs`);
 const Gettingoverit = require(`./games/gettingoverit`);
 
 // Variables
-const token = `NzQwNTg3NzY0MTE4MTkyMjEy.XyrMGg.-rMRhDGiHj0cXyP4D_Sq6TL2zrs`;
+const { token } = JSON.parse(fs.readFileSync(`token.json`));
 const p = `$`; // Prefix
 global.prefix = p;
 const moderators = [`187542518659809280`]; // Discord IDs (msg.member.id)
